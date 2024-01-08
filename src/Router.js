@@ -8,7 +8,7 @@ import Payment from "./Component/Book-my-show/Payment/Payment";
 
 const Router = () => {
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Detail" element={<Detail/>}/>
